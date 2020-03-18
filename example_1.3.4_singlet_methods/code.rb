@@ -1,12 +1,14 @@
-str = "Hello, world!"
-str2 = "str2"
+# frozen_string_literal: true
+
+str = 'Hello, world!'
+str2 = 'str2'
 
 def str.spell
-  self.split("").join("-")
+  split('').join('-')
 end
 
 def str2.spell
-  self.split("").join("+")
+  split('').join('+')
 end
 
 puts str.spell
